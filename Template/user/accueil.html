@@ -1,6 +1,117 @@
+{% load static %}
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>Rage Freebie HTML5 Landing page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="favicon.ico">
 
-{% extends "main.html" %}
+        <!--Google Font link-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 
-{% block content %}
-<h1> home page </h1>
-{% endblock %}
+        <link rel="stylesheet" href="{% static 'css/user/accueil/animate.css'%}">
+        <link rel="stylesheet" href="{% static 'css/user/accueil/bootsnav.css'%}">
+        <link rel="stylesheet" href="{% static 'css/user/accueil/font-awesome.min.css'%}">
+        <link rel="stylesheet" href="{% static 'css/user/accueil/fonticons.css'%}">
+        <link rel="stylesheet" href="{% static 'css/user/accueil/bootstrap.css'%}">
+
+
+        <!--For Plugins external css-->
+        <!--<link rel="stylesheet" href="css/plugins.css" />-->
+
+        <!--Theme custom css -->
+        <link rel="stylesheet" href="{% static 'css/user/accueil/style.css'%}">
+        <!--<link rel="stylesheet" href="css/colors/maron.css">-->
+
+        <!--Theme Responsive css-->
+        <link rel="stylesheet" href="{% static 'css/user/accueil/responsive.css'%}">
+
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar-collapse">
+        <div id="loading">
+            <div id="loading-center">
+                <div id="loading-center-absolute">
+                    <div class="object" id="object_one"></div>
+                    <div class="object" id="object_two"></div>
+                    <div class="object" id="object_three"></div>
+                    <div class="object" id="object_four"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="culmn">
+            <!--Home page style-->
+            <nav class="navbar navbar-default navbar-fixed white no-background bootsnav">
+                <!-- Start Top Search -->
+
+                <!-- End Top Search -->
+
+                <div class="container">
+                    <!-- Start Atribute Navigation -->
+                    <!-- End Atribute Navigation -->
+
+                    <!-- Start Header Navigation -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="#brand">
+
+                            <img src="" class="logo logo-display m-top-10" alt="">
+                            <img src="" class="logo logo-scrolled" alt="">
+
+                        </a>
+                    </div>
+                    <!-- End Header Navigation -->
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="navbar-menu">
+                        <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                            <li><a href="#hello">Epreuves</a></li>
+                            <li><a href="#about">A propos</a></li>
+                            <li><a href="#service">Nos services</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div>
+
+                <!-- Start Side Menu -->
+                <!-- End Side Menu -->
+
+            </nav>
+                <!--Home Sections-->
+        </div>
+        <section id="hello" class="home bg-mega">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="main_home">
+                        <div class="home_text">
+                            <h1 class="text-white">DJOSELEARN, <br /> Une solution pour vous</h1>
+                        </div>
+
+                        <div class="home_btns m-top-40">
+                            <a href="" class="btn btn-primary m-top-20">S'inscrire</a>
+                            <a href="" class="btn btn-default m-top-20">connexion</a>
+                        </div>
+
+                    </div>
+                </div><!--End off row-->
+            </div><!--End off container -->
+        </section> <!--End off Home Sections-->
+
+            <!-- JS includes -->
+            <script src="{% static 'js/user/accueil/jquery-1.11.2.min.js'%}"></script>
+            <script src="{% static 'js/user/accueil/bootstrap.min.js'%}"></script>
+            <!-- paradise slider js -->
+            <script src="{% static 'js/user/accueil/main.js'%}"></script>
+    </body>
+</html>
