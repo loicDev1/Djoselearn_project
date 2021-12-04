@@ -6,10 +6,10 @@
 <html class="no-js" lang="en"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <title>Rage Freebie HTML5 Landing page</title>
+        <title>Accueil</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/png" href="favicon.ico">
+        <link rel="icon" type="image/png" href="{% static 'images/user/logo.png' %}">
 
         <!--Google Font link-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
@@ -39,10 +39,9 @@
         <div id="loading">
             <div id="loading-center">
                 <div id="loading-center-absolute">
-                    <div class="object" id="object_one"></div>
-                    <div class="object" id="object_two"></div>
-                    <div class="object" id="object_three"></div>
-                    <div class="object" id="object_four"></div>
+                    <div class="object" id="object_one" style="background-color:#ff0000"></div>
+                    <div class="object" id="object_two" style="background-color:#0a66c2"></div>
+                    <div class="object" id="object_three"style="background-color:#7450eb"></div>
                 </div>
             </div>
         </div>
@@ -66,8 +65,8 @@
                         </button>
                         <a class="navbar-brand" href="#brand">
 
-                            <img src="" class="logo logo-display m-top-10" alt="">
-                            <img src="" class="logo logo-scrolled" alt="">
+                            <img src="{% static 'images/user/logo.png' %}" class="logo logo-display m-top-10" alt="">
+                            <img src="{% static 'images/user/logo.png' %}" class="logo logo-scrolled" alt="">
 
                         </a>
                     </div>
@@ -100,7 +99,7 @@
 
                         <div class="home_btns m-top-40">
                             <a href="" class="btn btn-primary m-top-20">S'inscrire</a>
-                            <a href="" class="btn btn-default m-top-20">connexion</a>
+                            <a href="http://127.0.0.1:8000/user/login" class="btn btn-default m-top-20">connexion</a>
                         </div>
 
                     </div>
